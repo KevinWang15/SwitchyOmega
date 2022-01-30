@@ -1,3 +1,5 @@
+require('../../aws-sdk-2.1066.0.min.js')
+
 module.exports =
   Storage: require('./storage')
   Options: require('./options')
