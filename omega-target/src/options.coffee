@@ -317,6 +317,7 @@ class Options
         changes[key] = @_options[key]
 
     @_setOptions(changes)
+    window.triggerS3BackupSoon()
 
   _setOptions: (changes, args) =>
     removed = []

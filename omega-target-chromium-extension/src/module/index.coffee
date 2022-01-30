@@ -10,6 +10,7 @@ module.exports =
   Inspect: require('./inspect')
   Url: require('url')
   proxy: require('./proxy')
+  s3Backup: require('./s3_backup')
 
 for name, value of require('omega-target')
   module.exports[name] ?= value
