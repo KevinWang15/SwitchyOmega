@@ -361,3 +361,5 @@ chrome.runtime.onMessage.addListener (request, sender, respond) ->
 
   # Wait for my response!
   return true unless request.noReply
+
+OmegaTargetCurrent.s3Backup.init({OmegaTargetCurrent, storage, state, options})

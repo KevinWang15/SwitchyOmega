@@ -1,3 +1,6 @@
+require('../../aws-sdk-2.1066.0.min.js')
+window.CryptoJS = require('../../crypto-js.js')
+
 module.exports =
   Storage: require('./storage')
   Options: require('./options')
@@ -8,6 +11,7 @@ module.exports =
   Inspect: require('./inspect')
   Url: require('url')
   proxy: require('./proxy')
+  s3Backup: require('./s3_backup')
 
 for name, value of require('omega-target')
   module.exports[name] ?= value
